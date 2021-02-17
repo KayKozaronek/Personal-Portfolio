@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import Pdf from "../pdf/CV_Kay_Kozaronek.pdf"
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -43,10 +44,10 @@ const About = () => {
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    ''}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree || ''}
                 </p>
                 {resume && (
                   <span className="d-flex mt-3">
@@ -54,7 +55,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href={Pdf}
                     >
                       Resume
                     </a>
